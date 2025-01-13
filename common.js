@@ -1,5 +1,13 @@
 const mainDOM = document.querySelector("main");
 const cellParent = document.getElementById("cellParent")
+const HomeLinkDOM = document.querySelector(".HomeLink")
+
+const HomeLink = document.createElement("a")
+HomeLinkDOM.appendChild(HomeLink)
+HomeLink.textContent = "Home"
+HomeLink.setAttribute("href", "../index.html")
+
+
 function randomInt(min, max) {
     return min + Math.floor((max+1- min) * Math.random());
  }
