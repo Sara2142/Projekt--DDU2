@@ -11,3 +11,7 @@ const input = document.createElement("input");
 mainDOM.appendChild(input);
 input.classList.add("input");
 input.value = 93;
+const createButton = document.createElement("button")
+mainDOM.appendChild(createButton)
+createButton.classList.add("button")
+createButton.textContent = "Create"
