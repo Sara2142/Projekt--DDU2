@@ -20,3 +20,12 @@ createButton.addEventListener("click", function(){
     creatCells(input.value)
     
 })
+function creatCells (number){
+    for (let i = 0; i < number; i++){
+        const cell = document.createElement("div")
+        cellParent.appendChild(cell)
+        cell.classList.add("cell")
+        cell.textContent = randomInt(0,99)
+    }
+}
+creatCells (93)
