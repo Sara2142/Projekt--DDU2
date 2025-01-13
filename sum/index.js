@@ -22,3 +22,22 @@ function sumofAllCells(){
     return total;
 }
 text1Input.value = sumofAllCells()
+function markedcells(){
+    const cells = document.querySelectorAll(".cell")
+    let Totalsum = 0
+    
+    for (let cell of cells){
+     cell.addEventListener("click", function marked(){
+        cell.classList.add("marked")
+        Totalsum += Number(cell.textContent)
+        text2Input.value = Totalsum
+     })
+
+     resetButton.addEventListener("click", function(){
+        cell.classList.remove("marked")
+        text2Input.value = "-"
+        Totalsum = 0
+    })
+    }  
+}
+markedcells()
