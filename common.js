@@ -7,3 +7,7 @@ const NumberText = document.createElement("div");
 mainDOM.appendChild(NumberText);
 NumberText.textContent = "How many Numbers in the grid?";
 NumberText.classList.add("numberText");
+const input = document.createElement("input");
+mainDOM.appendChild(input);
+input.classList.add("input");
+input.value = 93;
