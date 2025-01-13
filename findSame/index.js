@@ -15,3 +15,12 @@ function findSame(){
              }
         })
     
+        resetButton.addEventListener("click", function(){
+            cell.classList.remove("found")
+            textAboutButton.textContent = "Click on a number to find copies"
+        })
+    } 
+    
+}
+
+findSame()
