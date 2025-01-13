@@ -3,3 +3,7 @@ const cellParent = document.getElementById("cellParent")
 function randomInt(min, max) {
     return min + Math.floor((max+1- min) * Math.random());
  }
+const NumberText = document.createElement("div");
+mainDOM.appendChild(NumberText);
+NumberText.textContent = "How many Numbers in the grid?";
+NumberText.classList.add("numberText");
