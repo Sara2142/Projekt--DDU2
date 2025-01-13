@@ -22,3 +22,4 @@ function findNotInPlaceNumbers(){
 }
 
 findNotInPlaceNumbers()
+repeatedInput.value = "KAN INTE LISTA UT DEN :("
