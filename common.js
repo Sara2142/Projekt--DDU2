@@ -15,3 +15,8 @@ const createButton = document.createElement("button")
 mainDOM.appendChild(createButton)
 createButton.classList.add("button")
 createButton.textContent = "Create"
+createButton.addEventListener("click", function(){
+    cellParent.innerHTML = ""
+    creatCells(input.value)
+    
+})
