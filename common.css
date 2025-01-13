@@ -49,6 +49,25 @@ main{
   padding: 4px 10px;
 }
 
+.cell{
+    background-color: #8fb4d4;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#cellParent{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 40px);
+    grid-template-rows: repeat(auto-fit, 40px);
+    gap: 5px;
+    justify-content: center;
+}
 
 
 #extraLinks{
