@@ -21,3 +21,19 @@ twoButtons.appendChild(removeNumInput)
 removeNumInput.value = "-"
 removeNumInput.id = "removeNumInput"
 removeNumInput.disabled = "true"
+randomNumButton.addEventListener("click", function(){
+    const cells = document.querySelectorAll(".cell")
+    randomNumInput.value = Math.floor (99 * Math.random())
+    let matchedCounter = 0
+    let foundMatch = false
+
+    for (let cell of cells){
+        if (randomNumInput.value == Number(cell.textContent)){
+            cell.classList.add("matched")
+            matchedCounter++
+            removeNumInput.value= "-"
+            foundMatch = true
+        } else {
+            cell.classList.remove("matched")
+            
+        } 
