@@ -20,3 +20,4 @@ function findTwoCells() {
     }
 
 }
+buttonForTwoCells.addEventListener("click", findTwoCells);
