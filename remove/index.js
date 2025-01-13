@@ -37,3 +37,18 @@ randomNumButton.addEventListener("click", function(){
             cell.classList.remove("matched")
             
         } 
+        removeButton.addEventListener("click", function(){
+            if (cell.classList.contains("matched")){
+                cell.classList.add("removed")
+                cell.textContent = "X"
+                removeNumInput.value = `${randomNumInput.value} was removed ${matchedCounter} times`
+            } 
+
+            if (foundMatch == false){
+                removeNumInput.value = "Nothing to match"
+            } 
+        })
+        
+    }
+})
+
