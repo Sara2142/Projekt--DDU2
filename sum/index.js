@@ -41,3 +41,9 @@ function markedcells(){
     }  
 }
 markedcells()
+createButton.addEventListener("click", function(){
+    text1Input.value = sumofAllCells()
+    markedcells()
+    text2Input.value = "-"
+
+})
