@@ -9,6 +9,7 @@ const randomNumInput = document.createElement("input")
 twoButtons.appendChild(randomNumInput)
 randomNumInput.value = "-"
 randomNumInput.id = "randomNumInput"
+randomNumInput.disabled = "true"
 
 const removeButton = document.createElement("button")
 twoButtons.appendChild(removeButton)
@@ -19,3 +20,4 @@ const removeNumInput = document.createElement("input")
 twoButtons.appendChild(removeNumInput)
 removeNumInput.value = "-"
 removeNumInput.id = "removeNumInput"
+removeNumInput.disabled = "true"
